@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/*styling for header*/
+header{
+    width: 100%;
+    background-color: #A59C6F;
+    background-position: center;
+}
+#subHeader{
+    height: 150px;
+    background-color: #A59C6F;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 70px;
+}
+img#signIn{
+    width: 30px;
+    height: 30px;
+}
+.mainNav{
+    flex: 1;
+    text-align: right;
+}
+.subNav{
+    text-align:right;
+    background: #A59C6F;
+    width: 100%;
+}
+.mainNav ul li,.subNav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.mainNav ul li a,.subNav ul li a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    font-size: medium;
+    border: 2px #A59C6F solid;
+    padding: 3px;
+}
+.mainNav ul li a:visited ,.mainNav ul li a:hover,.subNav ul li a:hover,.subNav ul li a:visited{
+    color: rgb(95, 91, 91);
+}
+/*styling for main sections (home,aboutUs,accommodation,dining,contactUs,offers,reservation)*/
+#main h1{
+    font-size: 42px;
+    margin: 1% 0%;
+    text-align: center;
+}
+#main img{
+    width: 100%;
+    height: 1000px;
+    border: #A59C6F solid 2px;
+    background-size: cover;
+}
+#main h3{
+    text-align: center;
+}
+#mainBox,#footerBox{
+    margin: auto;
+    display:flex;
+    
+    justify-content: center;
+}
+#diningBox{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table#accommodationBox,table#accommodationBox tr td{
+    margin: auto;
+    border: #A59C6F 2px solid;
+    padding: 30px;
+}
+.mainContainer , .resturant,.offersforrooms,.offersForDining{
+    margin: auto;
+    border: .1em #A59C6F solid;
+    color: #A59C6F;
+    font-size: 20px;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+tr.roomsAndSuites,tr.roomsAndSuites td{
+    border: 40px;
+}
+tr.roomsAndSuites td h3{
+    color: #A59C6F;
+}
+/*main content of each page*/
+.mainContainer img,.resturant img,.roomsAndSuites img,.offersforrooms img,.offersForDining img{
+    width: 300px;
+    height: 200px;
+    border: 1px black solid;
+}
+.mainContainer a.moreDetails,.roomsAndSuites a,.BookNow{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #A59C6F;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: #A59C6F;
+    position: relative;
+}
+.mainContainer ol{
+    color: black;
+    justify-content: center;
+    padding-left: 40px;
+
+}
+.mainContainer a.moreDetails:visited,.mainContainer a.moreDetails:hover,.roomsAndSuites a,input[type=submit]:hover,input[type=reset]:hover,input[type=button]:hover{
+    color: #A59C6F;
+    background: black;
+    transition: 2s;
+}
+
+.mainContainer p,.resturant p,.roomsAndSuites p,.offersforrooms p,.offersForDining p,.mainContainer ol li a{
+    color: black;
+    font-size: 18px;
+    margin: 1px 1px 1px 1px;
+}
+li.terms{
+    list-style:square;
+    color: black;
+    font-size: 16px;
+}
+.offersforrooms table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mainContainer h2 ,.resturant h3,.roomsAndSuites h3,.offersforrooms h3,.offersForDining h3{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+/*styling for footer of all pages*/
+#footerBox{
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    background-color: #A59C6F;
+    display: flex;
+    
+}
+.footerMain{
+    margin: auto;
+    padding: 15px;
+}
+.footerMain ul li {
+    /*list-style: none;*/
+    margin-bottom: 10px;
+}
+.footerMain ul li a,#map{
+    text-decoration: none;
+    color: black;
+}
+#aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*more for about us page*/
+.about{
+    border: .1em ;
+    color: #A59C6F;
+    font-size: 20px;
+    padding: 1em;
+    margin: 1em;
+    background-color: white; 
+    align-items: center;
+}
+.about p{
+    color: black;    
+}
+hr.new1{
+    border: 2px solid #A59C6F;
+    width:100%;
+}
+.about h3{
+    text-decoration: underline;
+    border-bottom: 20px;
+}
+/*user input*/
+input[type=text],input[type=email],input[type=date],textarea,input[type=submit],input[type=password],input[type=reset],input[type=number],select,input[type=radio]{
+    padding: 1px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom:2px solid #A59C6F;
+    margin: 4px 4px 4px 4px;
+}
+input[type=text],input[type=email],input[type=date],input[type=password],textarea{
+    width: 600px;
+}
+input[type=submit],input[type=reset],input[type=button]{
+    cursor:pointer;
+    color: black;
+    background: #A59C6F;
+    width: 200px ;
+}
+#rb{
+    font-size: 13px;
+}
+/*styling for forms*/
+#contactUsForm{
+    	display: flex;
+        flex-direction:column;
+        border: 2px #A59C6F solid;
+        margin: 30px;
+        text-align: center;
+}
+.comment{
+    margin: 10px;
+}
+#logInContainer,.signIn,.reservation{
+    justify-content: center;
+    padding: 4px;
+    border: #A59C6F 2px solid;
+}
+#mainForm ,#contactUs{
+    text-align: center;
+    margin: 10px;
+}
+.reservation fieldset legend{
+    color: #A59C6F;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+
+
+/*mobile stying*/
+@media(max-width:600px){
+    .mainHeader,#subHeader{
+        width: 100%;
+        height: auto;
+    }
+    div.mainNav ul li a,div.subNav ul li a{
+        font-size: 10px;
+    }
+    div.mainNav li.gridItem,div.subNav li.gridItem{
+        display: none;
+        overflow: hidden;
+    }
+    section#main img{
+        width: 100%;
+        height: auto;
+    }
+    #main h1,section#mainForm h2{
+        font-size: 17px;
+    }
+    #mainBox h2,div.resturant h3,tr.roomsAndSuites h3,div.about h3,section#main h3,div.offersforrooms h3{
+        font-size: 16px;
+    }
+    #mainBox p,div.resturant p,tr.roomsAndSuites p,.mainContainer ol,.mainContainer ol li a,tr.roomsAndSuites a,div.about p,div.offersforrooms p,section#mainForm p{
+        font-size: 15px;
+    }
+    .mainContainer a.moreDetails{
+        font-size: 12px;
+    }
+    .mainContainer img,.resturant img,.roomsAndSuites img,.offersforrooms img,.offersForDining img{
+        width: 200px;
+        height: auto;
+        border: 1px black solid;
+    }
+    img.logo,#mainForm img{
+        width: 100px;
+        height: auto;
+    }
+    #mainBox,div.offersforrooms,div.offersForDining{
+        margin: auto;
+        display:grid;
+        flex-direction:row;
+        justify-content: center;
+    }
+    input[type=text],input[type=email],input[type=date],input[type=password],textarea{
+        width: 100%;
+    }
+    #footerBox{
+        font-size: 10px;
+        width: 100%;
+        height: auto;
+    }
+    div.footerMain{
+        margin: auto;
+    }
+    table#accommodationBox tr td{
+        border: none;
+    }
+    table#accommodationBox tr,div.resturant table tr td,div.offersforrooms table tr,div.offersForDining table tr td{
+        display: grid;
+        border: #A59C6F 2px solid;
+        padding: 5px;
+        margin: auto;
+        justify-content:center ;
+    }
+}

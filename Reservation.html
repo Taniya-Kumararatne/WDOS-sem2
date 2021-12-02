@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is reservation page of Santani Hotel web site">
+        <title>SANTANI-Reservation</title>
+        <link rel="stylesheet" href="Styling/styling.css">
+        
+    </head>
+    <body>
+        <header id="subHeader">
+            <nav>
+                <a href="Home.html"><img src="Images/LogoText.jpg" alt="logo" class="logo"></a>
+                <div class="subNav">
+                    <ul>
+                        <li class="gridItem"><a href="Aboutus.html">ABOUT US</a></li>
+                        <li class="gridItem"><a href="Accommodation.html">ACCOMMODATION</a></li>
+                        <li class="gridItem"><a href="Dining.html">DINING</a></li>
+                        <li class="gridItem"><a href="Offers.html">OFFERS</a></li>
+                        <li class="gridItem"><a href="Contactus.html">CONTACT US</a></li>
+                        <li ><a href="Login.html"><img src="Images/Signin.PNG" alt="signIn" id="signIn"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <article>
+            
+            <section id="main"><h2>Book Room</h2></section>
+            <section>
+                <div class="reservation">
+                    <form>
+                        <fieldset class="bookRoom" id="resform">
+                            <legend>Rooms And Suites</legend>
+                                <label><b>Name:</b></label><br>
+                                <input  type="text" name="name" placeholder="Name" id="name" required><br>
+                                <label><b>E-mail:</b></label><br>
+                                <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                                <label><b>Phone Number:</b></label><br>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number" required><br>
+                                <label><b>Number of Guest:</b></label><br>
+                                <input type="number" name="#ofguest" placeholder="Number of guest" id="noOfGuests" max="4" min="1" required><br>
+                                <label><b>Number of Days:</b></label><br>
+                                <input type="number" name="#ofdays" placeholder="Number of days" id="noOfDays" min="1" required><br>
+                                <label><b>Room Type:</b></label><br>
+                                    <input type="radio" name="roomType" value="Superior Room" id="superior">
+                                    <label for="superior">Superior Room</label><br>
+                                    <input type="radio" name="roomType" value="Deluxe Room" id="deluxe">
+                                    <label for="deluxe">Deluxe Room</label><br>
+                                    <input type="radio" name="roomType" value="Junior Suite Room" id="juniorSuite">
+                                    <label for="juniorSuite">Junior Suite Room</label><br>
+                                    <input type="radio" name="roomType" value="Presidential Suite Room" id="presidentialSuite">
+                                    <label for="presidentialSuite">Presidential Suite Room</label>
+                                <br>
+                                <label><b>Meal Type:</b></label><br>
+                                    <input type="radio" value="RO" id="ro" name="mealType">
+                                    <label for="ro" >Room Only</label><br>
+                                    <input type="radio" value="BB" id="bb" name="mealType">
+                                    <label for="bb" >Breakfast & Bed</label><br>
+                                    <input type="radio" value="HB" id="hb" name="mealType">
+                                    <label for="hb" >Half Board</label><br> 
+                                    <input type="radio" value="FB" id="fb" name="mealType">
+                                    <label for="fb" >Full Board</label><br>
+                        </fieldset>
+                        <input type="button" value="ADD TO RESERVE" id="addtoreserve">
+                        <input type="reset" value="CLEAR" id="clearformdata">
+                        <p>
+                            <textarea id="res" rows="10"></textarea><br>
+                            <textarea id="rescost" rows="2"></textarea><br>
+                            <input type="button" value="CONFIRM RESERVE" id="reserve">
+                            <input type="button" value="CLEAR RESERVE" id="clearres"><br>
+                            <textarea id="final" rows="10"></textarea><br>
+                            <input type="button" id="addtofav" value="ADD TO FAVORITE">
+                            
+                        </p>
+                    </form> 
+                </div>
+            </section>
+        </article>
+        <footer id="footerBox">
+            <div class="footerMain">
+                <a href="Home.html"><img src="Images/LogoText.jpg" alt="logo" class="logo"></a>
+            </div>
+            <div class="footerMain">
+                <h3><u>FIND US</u></h3>
+                <a href="https://www.google.com/maps/place/Galle+Face,+Colombo/@6.922593,79.8456244,18z/data=!4m13!1m7!3m6!1s0x3ae2593b8b2c88ff:0x4537fcdaf592ff11!2sGalle+Face,+Colombo!3b1!8m2!3d6.9285775!4d79.84508!3m4!1s0x3ae2593ed27da841:0x11a1edcdb031b349!8m2!3d6.9229897!4d79.8468305">
+                    <p id="map">VISIT US:<br>
+                    7/1,<br>
+                    Galle Face,<br>
+                    Colombo 2,<br>
+                    Sri Lanka.</p><br><br>
+                </a>
+                    <p>CALL US:<br>
+                    +94 123456789</p>
+            </div>
+            <div class="footerMain">
+                <h3><u>OUR SERVICES</u></h3>
+                <ul>
+                    <li><a href="Accommodation.html">ACCOMMODATION</a></li>
+                    <li><a href="Dining.html">DINING</a></li>
+                    <li><a href="Offers.html">OFFERS</a></li>
+                    <li><a href="Reservation.html">RESERVATION</a></li>
+                    <li><a href="Contactus.html">CONTACT US</a></li>
+                    <li><a href="Aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="Script/script.js"></script>
+    </body>
+</html>
